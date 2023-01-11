@@ -14,6 +14,10 @@ OWASP Top 10 for Node.js web applications:
 
 [A Vulnerable Node.js App for Ninjas](http://nodegoat.herokuapp.com/) to exploit, toast, and fix. You may like to [set up your own copy](#how-to-set-up-your-copy-of-nodegoat) of the app to fix and test vulnerabilities. Hint: Look for comments in the source code.
 
+#### MongoDB
+
+The latest version of MongoDB (6.0) removed the ability to insert into the DB. This breaks NodeGoat. The fix was to change the version of MongoDB to 4.2 in docker-compose.yml.
+
 ##### Default user accounts
 
 The database comes pre-populated with these user accounts created as part of the seed data -
