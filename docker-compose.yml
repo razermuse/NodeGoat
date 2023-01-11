@@ -2,6 +2,8 @@ version: "3.7"
 
 services:
   web:
+    image: nodegoat_docker:latest    
+    container_name: nodegoat 
     build: .
     environment:
       NODE_ENV:
